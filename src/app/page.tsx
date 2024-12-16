@@ -4,33 +4,40 @@ import Image from "next/image";
 import React from "react";
 
 import hairPull from "./email-hairpull.webp"
-import noEmails from "./email-happy.webp"
+import logo from "./logo-192.png"
 import Link from "next/link";
+import { useRouter, useSearchParams } from "next/navigation";
 
-const getUserKind = () => localStorage.getItem("kind") || null;
+const getUserKind = (kind: string | null) => kind || localStorage.getItem("kind") || null;
 
 const UserKindSelector = ({ setUserKind }: { setUserKind: (s: string) => unknown }) => {
   return (
-    <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-4 flex-1 ">
-      <button className="p-4 flex-1 outline outline-orange-100 hover:bg-orange-100 transition-all duration-300 flex flex-col justify-center gap-2 items-center" onClick={() => setUserKind("consumer")}>
-        <h2 className="text-xl font-light max-w-lg">I Want To</h2>
-        <h1 className="text-3xl font-semibold max-w-lg">Understand the Value<br />My Partners Bring Me</h1>
-        <ul className="px-4 py-8 font-lg font-light max-w-md gap-2 flex flex-col list-disc text-zinc-700 text-left">
-          <li>Single Pane of Glass For Reports</li>
-          <li>Ask For Custom Modifications to Reports</li>
-          <li>Automated Monitoring on Reports</li>
-        </ul>
-        <h2 className="justify-self-end text-lg font-normal">This is free for you.</h2>
-      </button>
-      <button className="p-4 flex-1 outline outline-orange-100 hover:bg-orange-100 transition-all duration-300 flex flex-col justify-center gap-2 items-center" onClick={() => setUserKind("producer")}>
-        <h2 className="text-xl font-light max-w-lg">I Want To</h2>
-        <h1 className="text-3xl font-semibold max-w-lg">Automatically Show My Partners<br />My Real Value</h1>
-        <ul className="px-4 py-8 font-lg font-light max-w-md gap-2 flex flex-col list-disc text-zinc-700 text-left capitalize">
-          <li>Reduce Complexity by Automatically Generating Reports From Connected Datasources</li>
-          <li>Increase Customer Happiness by Automatically handling custom modifications to reports</li>
-          <li>Increase retention by Understanding how your customers think of your value</li>
-        </ul>
-      </button>
+    <div className="flex flex-col flex-1 p-8 sm:p-16 justify-center items-stretch">
+      <div className="flex flex-row gap-2 justify-center items-center">
+        <Image src={logo} alt="Forger" className="h-min w-min" />
+        <h1 className="text-7xl font-light">Reimagining Reporting</h1>
+      </div>
+      <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-4 flex-1 p-8 sm:p-16">
+        <button className="p-4 flex-1 outline outline-orange-100 hover:bg-orange-100 transition-all duration-300 flex flex-col justify-center gap-2 items-center" onClick={() => setUserKind("consumer")}>
+          <h2 className="text-xl font-light max-w-lg">I Want To</h2>
+          <h1 className="text-3xl font-semibold max-w-lg">Understand the Value<br />My Partners Bring Me</h1>
+          <ul className="px-4 py-8 font-lg font-light max-w-md gap-2 flex flex-col list-disc text-zinc-700 text-left">
+            <li>Single Pane of Glass For Reports</li>
+            <li>Ask For Custom Modifications to Reports</li>
+            <li>Automated Monitoring on Reports</li>
+          </ul>
+          <h2 className="justify-self-end text-lg font-normal">This is free for you.</h2>
+        </button>
+        <button className="p-4 flex-1 outline outline-orange-100 hover:bg-orange-100 transition-all duration-300 flex flex-col justify-center gap-2 items-center" onClick={() => setUserKind("producer")}>
+          <h2 className="text-xl font-light max-w-lg">I Want To</h2>
+          <h1 className="text-3xl font-semibold max-w-lg">Automate My External<br/>Reporting Pipeline</h1>
+          <ul className="px-4 py-8 font-lg font-light max-w-md gap-2 flex flex-col list-disc text-zinc-700 text-left capitalize">
+            <li>Reduce Complexity by Automatically Generating Reports From Connected Datasources</li>
+            <li>Increase Customer Happiness by Automatically handling custom modifications to reports</li>
+            <li>Increase retention by Understanding how your customers think of your value</li>
+          </ul>
+        </button>
+      </div>
     </div>
   );
 };
@@ -51,7 +58,7 @@ const Hero = () => {
   )
 }
 
-const pie = Math.random() > 0.3 ? "Pie" : (Math.random() > 0.75 ? "π" : "🥧");
+const pie = Math.random() > 0.3 ? "Pie" : (Math.random() > 0.8 ? "π" : "🥧");
 
 const HowItWorksA = () => {
   return (
@@ -93,7 +100,7 @@ const HowItWorksC = () => {
   )
 }
 
-const Pricing = () => {
+const Pricing = ({ setUserKind }: { setUserKind: (s: string) => unknown }) => {
   return (
     <div className="flex flex-col justify-start gap-4 p-8 sm:p-8" id="pricing">
       <h1 className="text-4xl font-semibold text-center">It's Free? How?</h1>
@@ -115,33 +122,8 @@ const Pricing = () => {
             We all know making the reports is much more complex than reading them!
           </h2>
           <div className="pt-4 flex flex-col items-center">
-            <button className="bg-transparent hover:bg-orange-400 text-orange-700 hover:text-white py-2 px-4 border border-orange-700 hover:border-transparent rounded-sm">How Can I Simplify My Reporting</button> 
+            <button onClick={() => setUserKind("producer")} className="bg-transparent hover:bg-orange-400 text-orange-700 hover:text-white py-2 px-4 border border-orange-700 hover:border-transparent rounded-sm">How Can I Simplify My Reporting</button> 
           </div>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-const ThenNow = () => {
-  return (
-    <div className="flex flex-col justify-start items-stretch self-stretch ">
-      <div className="flex-col sm:flex-row hidden sm:flex">
-        <div className="flex flex-col sm:flex-1 p-4 bg-orange-100">
-          <h1 className="inline text-lg text-center">Before</h1>
-        </div>
-        <div className="flex flex-col sm:flex-1 p-4 ">
-        <h1 className="inline text-xl text-center font-semibold">With Forger</h1>
-        </div>
-      </div>
-      <div className="flex flex-col sm:flex-row">
-        <div className="flex flex-col sm:flex-1 p-4 bg-orange-100">
-          <h1 className="inline text-lg text-center sm:hidden">Before</h1>
-
-        </div>
-        <div className="flex flex-col sm:flex-1 p-4">
-          <h1 className="inline text-lg text-center font-semibold sm:hidden">Now</h1>
-
         </div>
       </div>
     </div>
@@ -155,7 +137,7 @@ const UserKindConsumer = ({ setUserKind }: { setUserKind: (s: string) => unknown
       <HowItWorksA />
       <HowItWorksB />
       <HowItWorksC />
-      <Pricing />
+      <Pricing setUserKind={setUserKind} />
     </div>
   );
 };
@@ -174,9 +156,15 @@ const UserKindProducer = ({ setUserKind }: { setUserKind: (s: string) => unknown
 };
 
 export default function Home() {
-  const [userKind, setUserKind] = React.useState(getUserKind());
+  const params = useSearchParams();
+  const router = useRouter();
+  const [userKind, _setUserKind] = React.useState(getUserKind(params.get('kind')));
+  const setUserKind = (kind: string) => {
+    router.push(`/?kind=${kind}`)
+    _setUserKind(kind)
+  }
   let component = null;
-  if (true || userKind === "consumer") {
+  if (userKind === "consumer") {
     component = <UserKindConsumer setUserKind={setUserKind} />;
   }
   else if (userKind === "producer") {
