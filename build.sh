@@ -1,4 +1,7 @@
 #!/bin/sh
+
+set -euo pipefail
+
 DIR="docs"
 bun run next build
 git add .
