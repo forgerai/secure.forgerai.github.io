@@ -28,6 +28,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-400`}
       >
         {children}
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1168aaa373954226ba249e37b3940cf3"}'></script>
       </body>
     </html>
   );
