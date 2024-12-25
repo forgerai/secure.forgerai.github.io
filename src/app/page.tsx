@@ -18,17 +18,12 @@ export default function Home() {
     _setUserKind(kind)
   }
   let component = null;
-  if (userKind === "consumer") {
-    component = <UserKindConsumer setUserKind={setUserKind} />;
-  }
-  else if (userKind === "producer") {
-    component = <UserKindProducer setUserKind={setUserKind} />;
-  }
-  else {
-    component = <UserKindSelector setUserKind={setUserKind} />;
-  }
+
   return (
     <div className={"flex flex-col transition-all duration-200 min-h-screen pb-20 gap-16 font-[family-name:var(--font-geist-sans)] " + (userKind === "producer" ? "bg-zinc-950 text-white" : "bg-orange-50 text-zinc-950")}>
+      <UserKindConsumer show={userKind === "consumer"} setUserKind={setUserKind} />
+      <UserKindProducer show={userKind === "producer"} setUserKind={setUserKind} />
+      <UserKindSelector show={userKind !== "consumer" && userKind !== "producer"} setUserKind={setUserKind} />
       {component}
     </div>
   )

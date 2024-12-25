@@ -4,9 +4,9 @@ import Image from "next/image";
 import React from "react";
 import logo from "./logo-192.png"
 
-export const UserKindSelector = ({ setUserKind }: { setUserKind: (s: string) => unknown }) => {
+export const UserKindSelector = ({ setUserKind, show }: { setUserKind: (s: string) => unknown, show: boolean }) => {
   return (
-    <div className="flex flex-col flex-1 p-8 sm:p-16 justify-center items-stretch">
+    <div className={`${show ? 'flex' : 'hidden'} flex-col flex-1 p-8 sm:p-16 justify-center items-stretch`}>
       <div className="flex flex-row gap-2 justify-center items-center">
         <Image src={logo} alt="Forger" className="h-min w-min" />
         <h1 className="text-7xl font-light">Reimagining Reporting</h1>

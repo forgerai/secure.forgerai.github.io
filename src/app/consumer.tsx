@@ -98,9 +98,9 @@ const Hero = () => {
     )
   }
   
-  export const UserKindConsumer = ({ setUserKind }: { setUserKind: (s: string) => unknown }) => {
+  export const UserKindConsumer = ({ setUserKind, show }: { setUserKind: (s: string) => unknown, show: boolean}) => {
     return (
-      <div className="flex flex-col gap-8 flex-1">
+      <div className={`${show ? 'flex' : 'hidden'} flex-col gap-8 flex-1`}>
         <Hero />
         <HowItWorksA />
         <HowItWorksB />
