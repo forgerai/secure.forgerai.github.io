@@ -1,5 +1,6 @@
 "use client";
 
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 
 
@@ -30,7 +31,7 @@ const Hero = () => {
     )
   }
   
-  const HowItWorksLayout = ({ children, id, light, reversed, image, imageAlt, title, subtitle }: { id?: string, children: React.ReactNode, light?: boolean, reversed?: boolean, image?: null, imageAlt?: string, title: string, subtitle: string }) => {
+  const HowItWorksLayout = ({ children, id, light, reversed, image, imageAlt, title, subtitle }: { id?: string, children: React.ReactNode, light?: boolean, reversed?: boolean, image?: StaticImageData, imageAlt?: string, title: string, subtitle: string }) => {
     return (
       <div className={`flex flex-col justify-start gap-4 sm:gap-8 p-8 sm:p-8 sm:py-28 ${light ? 'bg-stone-900' : ''}`} id={id}>
   
@@ -41,7 +42,7 @@ const Hero = () => {
         <div className={`flex flex-col justify-around gap-10 ${reversed ? 'sm:flex-row-reverse' : 'sm:flex-row'}`}>
           {
             image ?
-              <div />
+            <Image className="sm:max-h-[55vh] sm:max-w-[55vh]" src={image} alt={imageAlt || ""} />
               : <div />
           }
           <div className="flex flex-col justify-center items-center text-xl">

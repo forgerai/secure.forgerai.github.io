@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { Suspense } from "react";
 
 import { useRouter, useSearchParams } from "next/navigation";
 import { UserKindConsumer } from "./consumer";
@@ -10,7 +10,7 @@ import logo from "./logo-192.png"
 import Link from "next/link";
 import Image from "next/image";
 
-const getUserKind = (kind: string | null) => kind || localStorage.getItem("kind") || null;
+const getUserKind = (kind: string | null) => kind || null;
 const NavBar = ({ setUserKind, dark, kind }: { setUserKind: (s: string) => unknown, dark: boolean, kind?: string | null }) => (
   <nav className="w-screen h-16 hidden sm:flex flex-row fixed px-4 justify-between">
     <Link href="/" className="flex justify-center items-center"> <Image src={logo} alt="Forger" className="h-12 w-12" /> </Link>
@@ -28,8 +28,8 @@ const NavBar = ({ setUserKind, dark, kind }: { setUserKind: (s: string) => unkno
     </div>
   </nav>
 )
-
-export default function Home() {
+function HomePage() {
+   "use client";
   const params = useSearchParams();
   const router = useRouter();
   const [userKind, _setUserKind] = React.useState(getUserKind(params.get('kind')));
@@ -37,17 +37,25 @@ export default function Home() {
     router.push(`/?kind=${kind}`)
     _setUserKind(kind)
   }
-  let component = null;
 
   return (
-    <div className={"flex flex-col transition-all duration-200 min-h-screen pb-20 gap-16 font-[family-name:var(--font-geist-sans)] " + (userKind === "producer" ? "bg-zinc-950 text-white" : "bg-orange-50 text-zinc-950")}>
-      <NavBar kind={userKind} dark={userKind === "producer"} setUserKind={setUserKind} />
-      <div className={"flex flex-col gap-16 pt-16"}>
-        <UserKindConsumer show={userKind === "consumer"} setUserKind={setUserKind} />
-        <UserKindProducer show={userKind === "producer"} setUserKind={setUserKind} />
-        <UserKindSelector show={userKind !== "consumer" && userKind !== "producer"} setUserKind={setUserKind} />
-        {component}
+    <Suspense>
+      <div className={"flex flex-col transition-all duration-200 min-h-screen pb-20 gap-16 font-[family-name:var(--font-geist-sans)] " + (userKind === "producer" ? "bg-zinc-950 text-white" : "bg-orange-50 text-zinc-950")}>
+        <NavBar kind={userKind} dark={userKind === "producer"} setUserKind={setUserKind} />
+        <div className={"flex flex-col gap-16 pt-16"}>
+          <UserKindConsumer show={userKind === "consumer"} setUserKind={setUserKind} />
+          <UserKindProducer show={userKind === "producer"} setUserKind={setUserKind} />
+          <UserKindSelector show={userKind !== "consumer" && userKind !== "producer"} setUserKind={setUserKind} />
+        </div>
       </div>
-    </div>
+    </Suspense>
+  )
+}
+export default function Home() {
+  "use client";
+  return (
+    <Suspense>
+      <HomePage />
+    </Suspense>
   )
 }
