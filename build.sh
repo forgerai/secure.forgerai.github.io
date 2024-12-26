@@ -7,4 +7,4 @@ bun run next build
 git add .
 git commit -m "build"
 git push
-git subtree push --force --prefix $DIR origin gh-pages
+git push origin `git subtree split --prefix $DIR main`:gh-pages --force
