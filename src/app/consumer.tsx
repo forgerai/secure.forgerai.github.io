@@ -6,6 +6,8 @@ import React from "react";
 import hairPull from "./email-hairpull.webp"
 import Link from "next/link";
 
+const hangon = () => alert("Hang on tight, we're on it!")
+
 const Hero = () => {
     return (
       <div className="flex flex-col justify-center items-center">
@@ -14,8 +16,13 @@ const Hero = () => {
           <h1 className="text-7xl font-semibold text-center">A Single Pane of Glass<br />For All Your Partners</h1>
           <h2 className="text-lg text-center font-normal max-w-2xl">Forger allows you to understand the value your partners bring you and monitor the health of your partnerships, allowing you to keep your partnerships healthy and strategic.</h2>
           <div className="flex flex-col md:flex-row gap-2 md:gap-4 py-8 justify-center items-center">
-            <button className="bg-orange-400 hover:bg-orange-500 text-white py-2 px-4 rounded-sm w-36">Let's Go</button>
-            <button className="bg-transparent hover:bg-orange-400 text-orange-700 hover:text-white py-2 px-4 border border-orange-700 hover:border-transparent rounded-sm">Contact Us</button>
+            <button onClick={hangon} className="bg-orange-400 border-orange-400 hover:bg-orange-500 text-white py-2 px-8 rounded-sm transform duration-200 hover:px-16">Let's Go</button>
+            <a href="https://outlook.office365.com/owa/calendar/QuickIntro@forger.ai/bookings/"
+              target="_blank"
+              className="bg-transparent relative transform duration-200 hover:bg-orange-400 text-orange-700 hover:text-white hover:px-12 py-2 px-4 border border-orange-700 hover:border-transparent rounded-sm"
+              referrerPolicy="no-referrer">
+                Contact Us
+            </a>
           </div>
         </div>
       </div>
@@ -79,7 +86,7 @@ const Hero = () => {
               We believe the power Forger brings for you is great, but we also know that it isn't life changing (yet). So we give it to you for free, since our mission is to rethink reporting in todays world, whether or not we profit from it. <br /> <br />If you want to tip us, we won't say no 😃️
             </h2>
             <div className="pt-4 flex flex-col items-center">
-              <button className="bg-orange-400 hover:bg-orange-500 font-semibold text-white py-2 px-4 rounded-sm">Create A Space</button>
+              <button onClick={hangon} className="bg-orange-400 hover:bg-orange-500 font-semibold text-white py-2 px-4 rounded-sm">Create A Space</button>
             </div>
           </div>
           <div className="flex flex-col items-center sm:flex-1">

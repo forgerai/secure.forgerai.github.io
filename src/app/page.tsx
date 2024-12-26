@@ -12,7 +12,7 @@ import Image from "next/image";
 
 const getUserKind = (kind: string | null) => kind || null;
 const NavBar = ({ setUserKind, dark, kind }: { setUserKind: (s: string) => unknown, dark: boolean, kind?: string | null }) => (
-  <nav className="w-screen h-16 hidden sm:flex flex-row fixed px-4 justify-between">
+  <nav className={`w-screen h-16 hidden sm:flex flex-row fixed px-4 justify-between z-50 ${dark ? 'bg-slate-950' : 'bg-orange-50'}`}>
     <Link href="/" className="flex justify-center items-center"> <Image src={logo} alt="Forger" className="h-12 w-12" /> </Link>
     <div className="flex flex-row items-center gap-4">
       <button onClick={() => setUserKind("producer")} className={`px-4 hover:underline  underline-offset-2 hover:text-lg transition-all ${kind === "producer" && 'underline'} duration-200 ${dark ? 'decoration-indigo-500' : 'decoration-orange-400'}`}>Simplify My Reporting</button>
