@@ -304,16 +304,17 @@ const hangon = ()=>alert("Hang on tight, we're on it!");
 const Hero = ()=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex flex-col justify-center items-center",
+        id: "hero-consumer",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "flex flex-col justify-center items-center gap-4 max-w-5xl p-8 sm:p-16 min-h-[75vh] ",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                    href: "/#pricing",
+                    href: "/#pricing-consumer",
                     className: "text-xl text-center underline text-zinc-500 font-semibold max-w-2xl",
                     children: "Pricing: Free"
                 }, void 0, false, {
                     fileName: "[project]/src/app/consumer.tsx",
-                    lineNumber: 18,
+                    lineNumber: 21,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -322,14 +323,14 @@ const Hero = ()=>{
                         "A Single Pane of Glass",
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                             fileName: "[project]/src/app/consumer.tsx",
-                            lineNumber: 26,
+                            lineNumber: 29,
                             columnNumber: 11
                         }, this),
                         "For All Your Partners"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/consumer.tsx",
-                    lineNumber: 24,
+                    lineNumber: 27,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -337,7 +338,7 @@ const Hero = ()=>{
                     children: "Forger allows you to understand the value your partners bring you and monitor the health of your partnerships, allowing you to keep your partnerships healthy and strategic."
                 }, void 0, false, {
                     fileName: "[project]/src/app/consumer.tsx",
-                    lineNumber: 29,
+                    lineNumber: 32,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -349,7 +350,7 @@ const Hero = ()=>{
                             children: "Create A Space"
                         }, void 0, false, {
                             fileName: "[project]/src/app/consumer.tsx",
-                            lineNumber: 35,
+                            lineNumber: 38,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -360,19 +361,19 @@ const Hero = ()=>{
                             children: "Contact Us"
                         }, void 0, false, {
                             fileName: "[project]/src/app/consumer.tsx",
-                            lineNumber: 41,
+                            lineNumber: 44,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/consumer.tsx",
-                    lineNumber: 34,
+                    lineNumber: 37,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/consumer.tsx",
-            lineNumber: 17,
+            lineNumber: 20,
             columnNumber: 7
         }, this)
     }, void 0, false, {
@@ -383,8 +384,9 @@ const Hero = ()=>{
 };
 _c = Hero;
 const pie = Math.random() > 0.3 ? "Pie" : Math.random() > 0.8 ? "π" : "🥧";
-const HowItWorksLayout = ({ children, dark, reversed, image, imageAlt, title, subtitle, callToAction })=>{
+const HowItWorksLayout = ({ children, dark, reversed, image, imageAlt, title, subtitle, callToAction, id })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        id: id,
         className: `flex flex-col justify-start gap-4 sm:gap-8 p-8 sm:p-8 sm:py-28 ${dark ? "bg-orange-100" : ""}`,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -395,7 +397,7 @@ const HowItWorksLayout = ({ children, dark, reversed, image, imageAlt, title, su
                         children: title
                     }, void 0, false, {
                         fileName: "[project]/src/app/consumer.tsx",
-                        lineNumber: 88,
+                        lineNumber: 94,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -403,13 +405,13 @@ const HowItWorksLayout = ({ children, dark, reversed, image, imageAlt, title, su
                         children: subtitle
                     }, void 0, false, {
                         fileName: "[project]/src/app/consumer.tsx",
-                        lineNumber: 89,
+                        lineNumber: 95,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/consumer.tsx",
-                lineNumber: 87,
+                lineNumber: 93,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -421,11 +423,11 @@ const HowItWorksLayout = ({ children, dark, reversed, image, imageAlt, title, su
                         alt: imageAlt || ""
                     }, void 0, false, {
                         fileName: "[project]/src/app/consumer.tsx",
-                        lineNumber: 97,
+                        lineNumber: 103,
                         columnNumber: 11
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {}, void 0, false, {
                         fileName: "[project]/src/app/consumer.tsx",
-                        lineNumber: 103,
+                        lineNumber: 109,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -438,7 +440,7 @@ const HowItWorksLayout = ({ children, dark, reversed, image, imageAlt, title, su
                                 children: callToAction.text
                             }, void 0, false, {
                                 fileName: "[project]/src/app/consumer.tsx",
-                                lineNumber: 108,
+                                lineNumber: 114,
                                 columnNumber: 13
                             }, this),
                             callToAction && callToAction.href && callToAction.newTab && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -449,7 +451,7 @@ const HowItWorksLayout = ({ children, dark, reversed, image, imageAlt, title, su
                                 children: callToAction.text
                             }, void 0, false, {
                                 fileName: "[project]/src/app/consumer.tsx",
-                                lineNumber: 116,
+                                lineNumber: 122,
                                 columnNumber: 13
                             }, this),
                             callToAction && callToAction.href && !callToAction.newTab && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -458,30 +460,31 @@ const HowItWorksLayout = ({ children, dark, reversed, image, imageAlt, title, su
                                 children: callToAction.text
                             }, void 0, false, {
                                 fileName: "[project]/src/app/consumer.tsx",
-                                lineNumber: 126,
+                                lineNumber: 132,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/consumer.tsx",
-                        lineNumber: 105,
+                        lineNumber: 111,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/consumer.tsx",
-                lineNumber: 91,
+                lineNumber: 97,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/consumer.tsx",
-        lineNumber: 82,
+        lineNumber: 87,
         columnNumber: 5
     }, this);
 };
 _c1 = HowItWorksLayout;
 const HowItWorksA = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(HowItWorksLayout, {
+        id: "learn-consumer",
         dark: true,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$consumer$2d$1$2e$webp$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$app$2f$consumer$2d$1$2e$webp__$5b$app$2d$client$5d$__$28$static$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
         imageAlt: "A person frustrated having to go through a ton of emails",
@@ -500,7 +503,7 @@ const HowItWorksA = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pro
                     children: "Stop wasting time chasing reports or navigating multiple dashboards. Forger unifies all your partner data in one place, giving you the clarity you need to focus on what matters most—building meaningful partnerships."
                 }, void 0, false, {
                     fileName: "[project]/src/app/consumer.tsx",
-                    lineNumber: 153,
+                    lineNumber: 160,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -508,7 +511,7 @@ const HowItWorksA = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pro
                     children: "You forward your reports to us, we give you one place where you can see all your partnerships, and their histories, in one go."
                 }, void 0, false, {
                     fileName: "[project]/src/app/consumer.tsx",
-                    lineNumber: 159,
+                    lineNumber: 166,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -520,18 +523,18 @@ const HowItWorksA = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pro
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/consumer.tsx",
-                    lineNumber: 163,
+                    lineNumber: 170,
                     columnNumber: 7
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/consumer.tsx",
-            lineNumber: 152,
+            lineNumber: 159,
             columnNumber: 5
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/consumer.tsx",
-        lineNumber: 140,
+        lineNumber: 146,
         columnNumber: 3
     }, this);
 _c2 = HowItWorksA;
@@ -557,7 +560,7 @@ const HowItWorksB = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pro
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/consumer.tsx",
-                    lineNumber: 182,
+                    lineNumber: 189,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -565,18 +568,18 @@ const HowItWorksB = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pro
                     children: "Gain deeper insights with relevant KPIs, and use it to understand your partnerships better."
                 }, void 0, false, {
                     fileName: "[project]/src/app/consumer.tsx",
-                    lineNumber: 187,
+                    lineNumber: 194,
                     columnNumber: 7
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/consumer.tsx",
-            lineNumber: 181,
+            lineNumber: 188,
             columnNumber: 5
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/consumer.tsx",
-        lineNumber: 169,
+        lineNumber: 176,
         columnNumber: 3
     }, this);
 _c3 = HowItWorksB;
@@ -602,7 +605,7 @@ const HowItWorksC = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pro
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/consumer.tsx",
-                    lineNumber: 209,
+                    lineNumber: 216,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -610,32 +613,32 @@ const HowItWorksC = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pro
                     children: "This is completely automated. You don't have to set anything up."
                 }, void 0, false, {
                     fileName: "[project]/src/app/consumer.tsx",
-                    lineNumber: 214,
+                    lineNumber: 221,
                     columnNumber: 7
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/consumer.tsx",
-            lineNumber: 208,
+            lineNumber: 215,
             columnNumber: 5
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/consumer.tsx",
-        lineNumber: 196,
+        lineNumber: 203,
         columnNumber: 3
     }, this);
 _c4 = HowItWorksC;
 const Pricing = ({ setUserKind })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex flex-col justify-start gap-4 p-8 sm:p-8",
-        id: "pricing",
+        id: "pricing-consumer",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                 className: "text-4xl font-semibold text-center",
                 children: "It's Free? How?"
             }, void 0, false, {
                 fileName: "[project]/src/app/consumer.tsx",
-                lineNumber: 224,
+                lineNumber: 234,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -649,7 +652,7 @@ const Pricing = ({ setUserKind })=>{
                                 children: "Forger is Free For You"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/consumer.tsx",
-                                lineNumber: 227,
+                                lineNumber: 237,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -658,20 +661,20 @@ const Pricing = ({ setUserKind })=>{
                                     "We believe the power Forger brings for you is great, but we also know that it isn't life changing (yet). So we give it to you for free, since our mission is to rethink reporting in todays world, whether or not we profit from it. ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/src/app/consumer.tsx",
-                                        lineNumber: 234,
+                                        lineNumber: 244,
                                         columnNumber: 47
                                     }, this),
                                     " ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/src/app/consumer.tsx",
-                                        lineNumber: 234,
+                                        lineNumber: 244,
                                         columnNumber: 54
                                     }, this),
                                     "If you want to tip us, we won't say no 😃️"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/consumer.tsx",
-                                lineNumber: 230,
+                                lineNumber: 240,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -682,18 +685,18 @@ const Pricing = ({ setUserKind })=>{
                                     children: "Create A Space"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/consumer.tsx",
-                                    lineNumber: 238,
+                                    lineNumber: 248,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/consumer.tsx",
-                                lineNumber: 237,
+                                lineNumber: 247,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/consumer.tsx",
-                        lineNumber: 226,
+                        lineNumber: 236,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -704,7 +707,7 @@ const Pricing = ({ setUserKind })=>{
                                 children: "We work with your partners to automate the entire reporting stack"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/consumer.tsx",
-                                lineNumber: 247,
+                                lineNumber: 257,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -713,14 +716,14 @@ const Pricing = ({ setUserKind })=>{
                                     "This is the real magic of our product. ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/src/app/consumer.tsx",
-                                        lineNumber: 251,
+                                        lineNumber: 261,
                                         columnNumber: 52
                                     }, this),
                                     "We work with your partners to directly integrate with your datasets to create and manage reports automatically. This simplifies operations while allowing for unparalleled customization in reporting. We all know making the reports is much more complex than reading them!"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/consumer.tsx",
-                                lineNumber: 250,
+                                lineNumber: 260,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -731,30 +734,30 @@ const Pricing = ({ setUserKind })=>{
                                     children: "How Can I Simplify My Reporting"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/consumer.tsx",
-                                    lineNumber: 259,
+                                    lineNumber: 269,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/consumer.tsx",
-                                lineNumber: 258,
+                                lineNumber: 268,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/consumer.tsx",
-                        lineNumber: 246,
+                        lineNumber: 256,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/consumer.tsx",
-                lineNumber: 225,
+                lineNumber: 235,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/consumer.tsx",
-        lineNumber: 223,
+        lineNumber: 230,
         columnNumber: 5
     }, this);
 };
@@ -765,40 +768,40 @@ const UserKindConsumer = ({ setUserKind, show })=>{
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Hero, {}, void 0, false, {
                 fileName: "[project]/src/app/consumer.tsx",
-                lineNumber: 281,
+                lineNumber: 291,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(HowItWorksA, {}, void 0, false, {
                 fileName: "[project]/src/app/consumer.tsx",
-                lineNumber: 282,
+                lineNumber: 292,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(HowItWorksB, {}, void 0, false, {
                 fileName: "[project]/src/app/consumer.tsx",
-                lineNumber: 283,
+                lineNumber: 293,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(HowItWorksC, {}, void 0, false, {
                 fileName: "[project]/src/app/consumer.tsx",
-                lineNumber: 284,
+                lineNumber: 294,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Pricing, {
                 setUserKind: setUserKind
             }, void 0, false, {
                 fileName: "[project]/src/app/consumer.tsx",
-                lineNumber: 285,
+                lineNumber: 295,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Footer"], {}, void 0, false, {
                 fileName: "[project]/src/app/consumer.tsx",
-                lineNumber: 286,
+                lineNumber: 296,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/consumer.tsx",
-        lineNumber: 280,
+        lineNumber: 290,
         columnNumber: 5
     }, this);
 };
@@ -922,6 +925,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$producer$2d$3$
 const Hero = ()=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex flex-col justify-center items-center",
+        id: "hero-producer",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "flex flex-col justify-center items-center gap-4 max-w-5xl p-8 sm:p-16 min-h-[75vh] ",
             children: [
@@ -931,14 +935,14 @@ const Hero = ()=>{
                         "Automate Your Reporting.",
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                             fileName: "[project]/src/app/producer.tsx",
-                            lineNumber: 18,
+                            lineNumber: 21,
                             columnNumber: 11
                         }, this),
                         "Deliver Unmatched Value."
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/producer.tsx",
-                    lineNumber: 16,
+                    lineNumber: 19,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -946,7 +950,7 @@ const Hero = ()=>{
                     children: "Simplify your reporting process and delight your clients with seamless, automated reports. Forger connects directly to your data sources, generates tailored reports effortlessly, and provides deep insights to help you understand your customers better."
                 }, void 0, false, {
                     fileName: "[project]/src/app/producer.tsx",
-                    lineNumber: 21,
+                    lineNumber: 24,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -962,7 +966,7 @@ const Hero = ()=>{
                                     className: "absolute inset-0 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/producer.tsx",
-                                    lineNumber: 34,
+                                    lineNumber: 37,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -970,24 +974,24 @@ const Hero = ()=>{
                                     children: "Request a Demo"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/producer.tsx",
-                                    lineNumber: 35,
+                                    lineNumber: 38,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/producer.tsx",
-                            lineNumber: 28,
+                            lineNumber: 31,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                            href: "#learn",
+                            href: "#learn-producer",
                             className: "relative p-[3px]",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "absolute inset-0 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/producer.tsx",
-                                    lineNumber: 40,
+                                    lineNumber: 43,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -995,25 +999,25 @@ const Hero = ()=>{
                                     children: "Learn More"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/producer.tsx",
-                                    lineNumber: 41,
+                                    lineNumber: 44,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/producer.tsx",
-                            lineNumber: 39,
+                            lineNumber: 42,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/producer.tsx",
-                    lineNumber: 27,
+                    lineNumber: 30,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/producer.tsx",
-            lineNumber: 15,
+            lineNumber: 18,
             columnNumber: 7
         }, this)
     }, void 0, false, {
@@ -1036,7 +1040,7 @@ const HowItWorksLayout = ({ children, id, light, reversed, image, imageAlt, titl
                         children: title
                     }, void 0, false, {
                         fileName: "[project]/src/app/producer.tsx",
-                        lineNumber: 85,
+                        lineNumber: 88,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1044,13 +1048,13 @@ const HowItWorksLayout = ({ children, id, light, reversed, image, imageAlt, titl
                         children: subtitle
                     }, void 0, false, {
                         fileName: "[project]/src/app/producer.tsx",
-                        lineNumber: 86,
+                        lineNumber: 89,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/producer.tsx",
-                lineNumber: 84,
+                lineNumber: 87,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1062,11 +1066,11 @@ const HowItWorksLayout = ({ children, id, light, reversed, image, imageAlt, titl
                         alt: imageAlt || ""
                     }, void 0, false, {
                         fileName: "[project]/src/app/producer.tsx",
-                        lineNumber: 94,
+                        lineNumber: 97,
                         columnNumber: 11
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {}, void 0, false, {
                         fileName: "[project]/src/app/producer.tsx",
-                        lineNumber: 100,
+                        lineNumber: 103,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1081,7 +1085,7 @@ const HowItWorksLayout = ({ children, id, light, reversed, image, imageAlt, titl
                                         className: "absolute inset-0 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/producer.tsx",
-                                        lineNumber: 106,
+                                        lineNumber: 109,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1089,13 +1093,13 @@ const HowItWorksLayout = ({ children, id, light, reversed, image, imageAlt, titl
                                         children: callToAction.text
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/producer.tsx",
-                                        lineNumber: 107,
+                                        lineNumber: 110,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/producer.tsx",
-                                lineNumber: 105,
+                                lineNumber: 108,
                                 columnNumber: 13
                             }, this),
                             callToAction && callToAction.href && callToAction.newTab && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1108,7 +1112,7 @@ const HowItWorksLayout = ({ children, id, light, reversed, image, imageAlt, titl
                                         className: "absolute inset-0 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/producer.tsx",
-                                        lineNumber: 119,
+                                        lineNumber: 122,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1116,13 +1120,13 @@ const HowItWorksLayout = ({ children, id, light, reversed, image, imageAlt, titl
                                         children: callToAction.text
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/producer.tsx",
-                                        lineNumber: 120,
+                                        lineNumber: 123,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/producer.tsx",
-                                lineNumber: 113,
+                                lineNumber: 116,
                                 columnNumber: 13
                             }, this),
                             callToAction && callToAction.href && !callToAction.newTab && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1133,7 +1137,7 @@ const HowItWorksLayout = ({ children, id, light, reversed, image, imageAlt, titl
                                         className: "absolute inset-0 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/producer.tsx",
-                                        lineNumber: 127,
+                                        lineNumber: 130,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1141,38 +1145,38 @@ const HowItWorksLayout = ({ children, id, light, reversed, image, imageAlt, titl
                                         children: callToAction.text
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/producer.tsx",
-                                        lineNumber: 128,
+                                        lineNumber: 131,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/producer.tsx",
-                                lineNumber: 126,
+                                lineNumber: 129,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/producer.tsx",
-                        lineNumber: 102,
+                        lineNumber: 105,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/producer.tsx",
-                lineNumber: 88,
+                lineNumber: 91,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/producer.tsx",
-        lineNumber: 78,
+        lineNumber: 81,
         columnNumber: 5
     }, this);
 };
 _c1 = HowItWorksLayout;
 const pie = Math.random() > 0.3 ? "Pie" : Math.random() > 0.8 ? "π" : "🥧";
 const HowItWorksA = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(HowItWorksLayout, {
-        id: "learn",
+        id: "learn-producer",
         light: true,
         title: "Reduce Complexity with Automated Reporting",
         subtitle: "Eliminate Manual Effort, Scale Your Operations",
@@ -1191,7 +1195,7 @@ const HowItWorksA = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pro
                     children: "Say goodbye to the time and expense of building custom reports manually. Forger integrates directly with your databases and other data sources, automatically generating professional-grade reports. Focus on growing your business while we take care of the reporting pipeline, saving you time and resources."
                 }, void 0, false, {
                     fileName: "[project]/src/app/producer.tsx",
-                    lineNumber: 156,
+                    lineNumber: 159,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1203,18 +1207,18 @@ const HowItWorksA = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pro
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/producer.tsx",
-                    lineNumber: 163,
+                    lineNumber: 166,
                     columnNumber: 7
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/producer.tsx",
-            lineNumber: 155,
+            lineNumber: 158,
             columnNumber: 5
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/producer.tsx",
-        lineNumber: 142,
+        lineNumber: 145,
         columnNumber: 3
     }, this);
 _c2 = HowItWorksA;
@@ -1236,17 +1240,17 @@ const HowItWorksB = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pro
                 children: "Enterprise clients demand customized reports, but manual tracking and modifications can be overwhelming. Forger automates the customization process, ensuring your clients get exactly what they need—quickly and accurately. Keep your customers happy and free up your team to focus on high-value tasks."
             }, void 0, false, {
                 fileName: "[project]/src/app/producer.tsx",
-                lineNumber: 182,
+                lineNumber: 185,
                 columnNumber: 7
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/producer.tsx",
-            lineNumber: 181,
+            lineNumber: 184,
             columnNumber: 5
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/producer.tsx",
-        lineNumber: 169,
+        lineNumber: 172,
         columnNumber: 3
     }, this);
 _c3 = HowItWorksB;
@@ -1268,17 +1272,17 @@ const HowItWorksC = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pro
                 children: "Gain powerful insights into how your clients interact with your reports. With Forger's analytics, you'll know which sections resonate, what draws attention, and where your clients see the most value—helping you improve your offerings and strengthen relationships."
             }, void 0, false, {
                 fileName: "[project]/src/app/producer.tsx",
-                lineNumber: 207,
+                lineNumber: 210,
                 columnNumber: 7
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/producer.tsx",
-            lineNumber: 206,
+            lineNumber: 209,
             columnNumber: 5
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/producer.tsx",
-        lineNumber: 194,
+        lineNumber: 197,
         columnNumber: 3
     }, this);
 _c4 = HowItWorksC;
@@ -1290,7 +1294,7 @@ const ConsumerAction = ({ setUserKind })=>/*#__PURE__*/ (0, __TURBOPACK__importe
                 children: "Looking to Centralize Your Partner Reports?"
             }, void 0, false, {
                 fileName: "[project]/src/app/producer.tsx",
-                lineNumber: 223,
+                lineNumber: 226,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1298,7 +1302,7 @@ const ConsumerAction = ({ setUserKind })=>/*#__PURE__*/ (0, __TURBOPACK__importe
                 children: "Forger also helps you consolidate all your partner reports into a single, easy-to-use dashboard. Stop juggling multiple portals and start getting clear insights from your partnerships."
             }, void 0, false, {
                 fileName: "[project]/src/app/producer.tsx",
-                lineNumber: 226,
+                lineNumber: 229,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1307,25 +1311,26 @@ const ConsumerAction = ({ setUserKind })=>/*#__PURE__*/ (0, __TURBOPACK__importe
                 children: "Centralize Your Reports"
             }, void 0, false, {
                 fileName: "[project]/src/app/producer.tsx",
-                lineNumber: 231,
+                lineNumber: 234,
                 columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/producer.tsx",
-        lineNumber: 222,
+        lineNumber: 225,
         columnNumber: 3
     }, this);
 _c5 = ConsumerAction;
 const Pricing = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex flex-col justify-center items-center gap-8 py-16 px-8 bg-zinc-900",
+        id: "pricing-producer",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                 className: "text-4xl font-semibold text-center max-w-3xl",
                 children: "Early Access Pricing"
             }, void 0, false, {
                 fileName: "[project]/src/app/producer.tsx",
-                lineNumber: 242,
+                lineNumber: 248,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1333,7 +1338,7 @@ const Pricing = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project
                 children: "As we're in the early stages of our journey, we work closely with each customer to understand their unique needs and provide tailored solutions. As an early adopter, you'll receive preferential pricing that reflects your valuable role in shaping our product."
             }, void 0, false, {
                 fileName: "[project]/src/app/producer.tsx",
-                lineNumber: 245,
+                lineNumber: 251,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1344,13 +1349,13 @@ const Pricing = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project
                 children: "Let's Discuss Your Needs"
             }, void 0, false, {
                 fileName: "[project]/src/app/producer.tsx",
-                lineNumber: 251,
+                lineNumber: 257,
                 columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/producer.tsx",
-        lineNumber: 241,
+        lineNumber: 244,
         columnNumber: 3
     }, this);
 _c6 = Pricing;
@@ -1360,47 +1365,47 @@ const UserKindProducer = ({ setUserKind, show })=>{
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Hero, {}, void 0, false, {
                 fileName: "[project]/src/app/producer.tsx",
-                lineNumber: 271,
+                lineNumber: 277,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(HowItWorksA, {}, void 0, false, {
                 fileName: "[project]/src/app/producer.tsx",
-                lineNumber: 272,
+                lineNumber: 278,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(HowItWorksB, {}, void 0, false, {
                 fileName: "[project]/src/app/producer.tsx",
-                lineNumber: 273,
+                lineNumber: 279,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(HowItWorksC, {}, void 0, false, {
                 fileName: "[project]/src/app/producer.tsx",
-                lineNumber: 274,
+                lineNumber: 280,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ConsumerAction, {
                 setUserKind: setUserKind
             }, void 0, false, {
                 fileName: "[project]/src/app/producer.tsx",
-                lineNumber: 275,
+                lineNumber: 281,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Pricing, {}, void 0, false, {
                 fileName: "[project]/src/app/producer.tsx",
-                lineNumber: 276,
+                lineNumber: 282,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Footer"], {
                 dark: true
             }, void 0, false, {
                 fileName: "[project]/src/app/producer.tsx",
-                lineNumber: 277,
+                lineNumber: 283,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/producer.tsx",
-        lineNumber: 270,
+        lineNumber: 276,
         columnNumber: 5
     }, this);
 };
@@ -1678,7 +1683,9 @@ var _s = __turbopack_refresh__.signature();
 ;
 ;
 const getUserKind = (kind)=>kind || null;
-const NavBar = ({ setUserKind, dark, kind })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+const NavBar = ({ setUserKind, dark, kind })=>{
+    const decorationColor = dark ? "decoration-indigo-500" : "decoration-orange-400";
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
         className: `w-screen h-16 hidden sm:flex flex-row fixed px-4 justify-between z-50 ${dark ? "bg-slate-950" : "bg-orange-50"}`,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1692,36 +1699,63 @@ const NavBar = ({ setUserKind, dark, kind })=>/*#__PURE__*/ (0, __TURBOPACK__imp
                         className: "h-12 w-12"
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 30,
-                        columnNumber: 7
+                        lineNumber: 34,
+                        columnNumber: 9
                     }, this),
                     " "
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 28,
-                columnNumber: 5
+                lineNumber: 32,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex flex-row items-center gap-4",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: ()=>setUserKind("producer"),
-                        className: `px-4 hover:underline  underline-offset-2 hover:text-lg transition-all ${kind === "producer" && "underline"} duration-200 ${dark ? "decoration-indigo-500" : "decoration-orange-400"}`,
-                        children: "Simplify My Reporting"
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        href: `#hero-${kind}`,
+                        className: `px-4 hover:underline underline-offset-2 transition-all duration-200 ${decorationColor}`,
+                        children: "Home"
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 33,
-                        columnNumber: 7
+                        lineNumber: 37,
+                        columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: ()=>setUserKind("consumer"),
-                        className: `px-4 hover:underline  underline-offset-2 hover:text-lg transition-all ${kind === "consumer" && "underline"} duration-200 ${dark ? "decoration-indigo-500" : "decoration-orange-400"}`,
-                        children: "Read Reports Easily For Free"
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        href: `#pricing-${kind}`,
+                        className: `px-4 hover:underline underline-offset-2 transition-all duration-200 ${decorationColor}`,
+                        children: "Pricing"
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
                         lineNumber: 43,
-                        columnNumber: 7
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        href: `#learn-${kind}`,
+                        className: `px-4 hover:underline underline-offset-2 transition-all duration-200 ${decorationColor}`,
+                        children: "Details"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/page.tsx",
+                        lineNumber: 49,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        onClick: ()=>setUserKind("producer"),
+                        className: `px-4 hover:underline  underline-offset-2 hover:text-lg transition-all ${kind === "producer" && "underline"} duration-200 ${decorationColor}`,
+                        children: "Simplify My Reporting"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/page.tsx",
+                        lineNumber: 55,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        onClick: ()=>setUserKind("consumer"),
+                        className: `px-4 hover:underline  underline-offset-2 hover:text-lg transition-all ${kind === "consumer" && "underline"} duration-200 ${decorationColor}`,
+                        children: "Read Reports Easily For Free"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/page.tsx",
+                        lineNumber: 63,
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                         href: "https://outlook.office365.com/owa/calendar/QuickIntro@forger.ai/bookings/",
@@ -1733,35 +1767,36 @@ const NavBar = ({ setUserKind, dark, kind })=>/*#__PURE__*/ (0, __TURBOPACK__imp
                                 className: `absolute inset-0 rounded-sm ${dark ? "bg-gradient-to-r from-indigo-500 to-purple-500" : "bg-orange-400 hover:bg-orange-500"}`
                             }, void 0, false, {
                                 fileName: "[project]/src/app/page.tsx",
-                                lineNumber: 59,
-                                columnNumber: 9
+                                lineNumber: 77,
+                                columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "group relative transform rounded-[6px] px-8 py-2 text-lg text-white duration-200 hover:bg-transparent hover:px-12",
                                 children: "Contact Us"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/page.tsx",
-                                lineNumber: 66,
-                                columnNumber: 9
+                                lineNumber: 84,
+                                columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 53,
-                        columnNumber: 7
+                        lineNumber: 71,
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 32,
-                columnNumber: 5
+                lineNumber: 36,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/page.tsx",
-        lineNumber: 23,
-        columnNumber: 3
+        lineNumber: 27,
+        columnNumber: 5
     }, this);
+};
 _c = NavBar;
 function HomePage() {
     _s();
@@ -1783,7 +1818,7 @@ function HomePage() {
                     setUserKind: setUserKind
                 }, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 95,
+                    lineNumber: 115,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1794,7 +1829,7 @@ function HomePage() {
                             setUserKind: setUserKind
                         }, void 0, false, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 101,
+                            lineNumber: 121,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$producer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["UserKindProducer"], {
@@ -1802,7 +1837,7 @@ function HomePage() {
                             setUserKind: setUserKind
                         }, void 0, false, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 105,
+                            lineNumber: 125,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$selector$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["UserKindSelector"], {
@@ -1810,24 +1845,24 @@ function HomePage() {
                             setUserKind: setUserKind
                         }, void 0, false, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 109,
+                            lineNumber: 129,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 100,
+                    lineNumber: 120,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 87,
+            lineNumber: 107,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/page.tsx",
-        lineNumber: 86,
+        lineNumber: 106,
         columnNumber: 5
     }, this);
 }
@@ -1843,12 +1878,12 @@ function Home() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Suspense"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(HomePage, {}, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 122,
+            lineNumber: 142,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/page.tsx",
-        lineNumber: 121,
+        lineNumber: 141,
         columnNumber: 5
     }, this);
 }

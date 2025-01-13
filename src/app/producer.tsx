@@ -11,7 +11,10 @@ import producer3 from "./producer-3.webp";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div
+      className="flex flex-col justify-center items-center"
+      id="hero-producer"
+    >
       <div className="flex flex-col justify-center items-center gap-4 max-w-5xl p-8 sm:p-16 min-h-[75vh] ">
         <h1 className="text-7xl font-semibold text-center">
           Automate Your Reporting.
@@ -36,7 +39,7 @@ const Hero = () => {
               Request a Demo
             </div>
           </a>
-          <a href="#learn" className="relative p-[3px]">
+          <a href="#learn-producer" className="relative p-[3px]">
             <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500" />
             <div className="bg-black group relative transform rounded-[6px] px-8 py-2 text-lg text-white duration-200 hover:bg-transparent hover:px-12">
               Learn More
@@ -140,7 +143,7 @@ const pie = Math.random() > 0.3 ? "Pie" : Math.random() > 0.8 ? "π" : "🥧";
 
 const HowItWorksA = () => (
   <HowItWorksLayout
-    id="learn"
+    id="learn-producer"
     light
     title="Reduce Complexity with Automated Reporting"
     subtitle="Eliminate Manual Effort, Scale Your Operations"
@@ -238,7 +241,10 @@ const ConsumerAction = ({
 );
 
 const Pricing = () => (
-  <div className="flex flex-col justify-center items-center gap-8 py-16 px-8 bg-zinc-900">
+  <div
+    className="flex flex-col justify-center items-center gap-8 py-16 px-8 bg-zinc-900"
+    id="pricing-producer"
+  >
     <h2 className="text-4xl font-semibold text-center max-w-3xl">
       Early Access Pricing
     </h2>

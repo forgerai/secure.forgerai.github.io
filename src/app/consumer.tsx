@@ -13,10 +13,13 @@ const hangon = () => alert("Hang on tight, we're on it!");
 
 const Hero = () => {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div
+      className="flex flex-col justify-center items-center"
+      id="hero-consumer"
+    >
       <div className="flex flex-col justify-center items-center gap-4 max-w-5xl p-8 sm:p-16 min-h-[75vh] ">
         <Link
-          href="/#pricing"
+          href="/#pricing-consumer"
           className="text-xl text-center underline text-zinc-500 font-semibold max-w-2xl"
         >
           Pricing: Free
@@ -63,6 +66,7 @@ const HowItWorksLayout = ({
   title,
   subtitle,
   callToAction,
+  id,
 }: {
   children: React.ReactNode;
   dark?: boolean;
@@ -77,9 +81,11 @@ const HowItWorksLayout = ({
     newTab?: boolean;
     action?: () => unknown;
   };
+  id?: string;
 }) => {
   return (
     <div
+      id={id}
       className={`flex flex-col justify-start gap-4 sm:gap-8 p-8 sm:p-8 sm:py-28 ${
         dark ? "bg-orange-100" : ""
       }`}
@@ -138,6 +144,7 @@ const HowItWorksLayout = ({
 
 const HowItWorksA = () => (
   <HowItWorksLayout
+    id="learn-consumer"
     dark
     image={consumer1}
     imageAlt="A person frustrated having to go through a ton of emails"
@@ -220,7 +227,10 @@ const HowItWorksC = () => (
 
 const Pricing = ({ setUserKind }: { setUserKind: (s: string) => unknown }) => {
   return (
-    <div className="flex flex-col justify-start gap-4 p-8 sm:p-8" id="pricing">
+    <div
+      className="flex flex-col justify-start gap-4 p-8 sm:p-8"
+      id="pricing-consumer"
+    >
       <h1 className="text-4xl font-semibold text-center">It's Free? How?</h1>
       <div className="flex flex-col sm:flex-row justify-between pt-8 gap-24 sm:gap-8">
         <div className="flex flex-col items-center sm:flex-1">
