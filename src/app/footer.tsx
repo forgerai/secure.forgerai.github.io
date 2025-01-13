@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const Footer = ({ dark }: { dark?: boolean }) => {
   const hoverColorClass = dark
     ? "hover:text-purple-500"
@@ -10,65 +12,65 @@ export const Footer = ({ dark }: { dark?: boolean }) => {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-gray-200 text-center md:text-left">
         <div className="flex flex-col gap-4 items-center md:items-start">
           <h3 className="font-semibold text-lg">Company</h3>
-          <a href="#" className={linkBaseClass}>
+          <Link href="#" className={linkBaseClass}>
             About Us
-          </a>
-          <a href="#" className={linkBaseClass}>
+          </Link>
+          <Link href="#" className={linkBaseClass}>
             Careers
-          </a>
-          <a href="#" className={linkBaseClass}>
+          </Link>
+          <Link href="#" className={linkBaseClass}>
             Blog
-          </a>
+          </Link>
         </div>
 
         <div className="flex flex-col gap-4 items-center md:items-start">
           <h3 className="font-semibold text-lg">Product</h3>
-          <a href="/" className={linkBaseClass}>
+          <Link href="/" className={linkBaseClass}>
             Features
-          </a>
-          <a href="#pricing" className={linkBaseClass}>
+          </Link>
+          <Link href="#pricing" className={linkBaseClass}>
             Pricing
-          </a>
-          <a href="#" className={linkBaseClass}>
+          </Link>
+          <Link href="#" className={linkBaseClass}>
             Security
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://outlook.office365.com/owa/calendar/QuickIntro@forger.ai/bookings/"
             className={linkBaseClass}
           >
             Talk To Us
-          </a>
+          </Link>
         </div>
 
         {/* <div className="flex flex-col gap-4">
               <h3 className="font-semibold text-lg">Resources</h3>
-              <a href="#" className={linkBaseClass}>
+              <Link href="#" className={linkBaseClass}>
                 Documentation
-              </a>
-              <a href="#" className={linkBaseClass}>
+              </Link>
+              <Link href="#" className={linkBaseClass}>
                 Help Center
-              </a>
-              <a href="#" className={linkBaseClass}>
+              </Link>
+              <Link href="#" className={linkBaseClass}>
                 API Reference
-              </a>
-              <a href="#" className={linkBaseClass}>
+              </Link>
+              <Link href="#" className={linkBaseClass}>
                 Community
-              </a>
+              </Link>
             </div> */}
 
         <div className="flex flex-col gap-4 items-center md:items-start">
           <h3 className="font-semibold text-lg">Legal</h3>
-          <a href="#" className={linkBaseClass}>
+          <Link href="#" className={linkBaseClass}>
             Privacy Policy
-          </a>
-          <a href="#" className={linkBaseClass}>
+          </Link>
+          <Link href="#" className={linkBaseClass}>
             Terms of Service
-          </a>
-          <a href="#" className={linkBaseClass}>
+          </Link>
+          <Link href="#" className={linkBaseClass}>
             Cookie Policy
-          </a>
+          </Link>
           {/* <div className="flex gap-4 pt-4">
-                <a href="#" className={linkBaseClass}>
+                <Link href="#" className={linkBaseClass}>
                   <svg
                     className="w-6 h-6"
                     fill="currentColor"
@@ -77,8 +79,8 @@ export const Footer = ({ dark }: { dark?: boolean }) => {
                   >
                     <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                   </svg>
-                </a>
-                <a href="#" className={linkBaseClass}>
+                </Link>
+                <Link href="#" className={linkBaseClass}>
                   <svg
                     className="w-6 h-6"
                     fill="currentColor"
@@ -91,8 +93,8 @@ export const Footer = ({ dark }: { dark?: boolean }) => {
                       clipRule="evenodd"
                     />
                   </svg>
-                </a>
-                <a href="#" className={linkBaseClass}>
+                </Link>
+                <Link href="#" className={linkBaseClass}>
                   <svg
                     className="w-6 h-6"
                     fill="currentColor"
@@ -105,7 +107,7 @@ export const Footer = ({ dark }: { dark?: boolean }) => {
                       clipRule="evenodd"
                     />
                   </svg>
-                </a>
+                </Link>
               </div> */}
         </div>
       </div>
