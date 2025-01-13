@@ -36,7 +36,7 @@ const Hero = () => {
             onClick={hangon}
             className="bg-orange-400 border-orange-400 hover:bg-orange-500 text-white py-2 px-8 rounded-sm transform duration-200 hover:px-16"
           >
-            Let's Go
+            Create A Space
           </button>
           <a
             href="https://outlook.office365.com/owa/calendar/QuickIntro@forger.ai/bookings/"
@@ -62,6 +62,7 @@ const HowItWorksLayout = ({
   imageAlt,
   title,
   subtitle,
+  callToAction,
 }: {
   children: React.ReactNode;
   dark?: boolean;
@@ -70,6 +71,12 @@ const HowItWorksLayout = ({
   imageAlt?: string;
   title: string;
   subtitle: string;
+  callToAction?: {
+    text: string;
+    href?: string;
+    newTab?: boolean;
+    action?: () => unknown;
+  };
 }) => {
   return (
     <div
@@ -97,6 +104,32 @@ const HowItWorksLayout = ({
         )}
         <div className="flex flex-col justify-center items-center text-xl">
           {children}
+          {callToAction && callToAction.action && (
+            <button
+              onClick={callToAction.action}
+              className="bg-transparent relative transform duration-200 hover:bg-orange-400 text-orange-700 hover:text-white hover:px-12 py-2 px-4 border border-orange-700 hover:border-transparent rounded-sm"
+            >
+              {callToAction.text}
+            </button>
+          )}
+          {callToAction && callToAction.href && callToAction.newTab && (
+            <a
+              href={callToAction.href}
+              target="_blank"
+              referrerPolicy="no-referrer"
+              className="bg-transparent relative transform duration-200 hover:bg-orange-400 text-orange-700 hover:text-white hover:px-12 py-2 px-4 border border-orange-700 hover:border-transparent rounded-sm"
+            >
+              {callToAction.text}
+            </a>
+          )}
+          {callToAction && callToAction.href && !callToAction.newTab && (
+            <Link
+              href={callToAction.href}
+              className="bg-transparent relative transform duration-200 hover:bg-orange-400 text-orange-700 hover:text-white hover:px-12 py-2 px-4 border border-orange-700 hover:border-transparent rounded-sm"
+            >
+              {callToAction.text}
+            </Link>
+          )}
         </div>
       </div>
     </div>
@@ -110,6 +143,11 @@ const HowItWorksA = () => (
     imageAlt="A person frustrated having to go through a ton of emails"
     title="Reduce Friction In Your Partnership Strategy"
     subtitle="By Centralizing Reports and Data Across All Partners"
+    callToAction={{
+      text: "Start Centralizing Today",
+      newTab: true,
+      href: "https://outlook.office365.com/owa/calendar/QuickIntro@forger.ai/bookings/",
+    }}
   >
     <div className="flex flex-col py-8 max-w-xl">
       <h3 className="">
@@ -134,6 +172,11 @@ const HowItWorksB = () => (
     subtitle="Ask For KPIs and Metrics That You Care About"
     image={consumer2}
     imageAlt="A successful business partnership"
+    callToAction={{
+      text: "Customize Your Insights",
+      newTab: true,
+      href: "https://outlook.office365.com/owa/calendar/QuickIntro@forger.ai/bookings/",
+    }}
   >
     <div className="flex flex-col py-8 max-w-xl">
       <h3 className="">
@@ -156,6 +199,11 @@ const HowItWorksC = () => (
     dark
     title="Stay Ahead of Your Partnerships"
     subtitle="By Automated Monitoring and Alerting on Reports"
+    callToAction={{
+      text: "Boost Your Confidence",
+      newTab: true,
+      href: "https://outlook.office365.com/owa/calendar/QuickIntro@forger.ai/bookings/",
+    }}
   >
     <div className="flex flex-col py-8 max-w-xl">
       <h3 className="">
@@ -189,7 +237,7 @@ const Pricing = ({ setUserKind }: { setUserKind: (s: string) => unknown }) => {
           <div className="pt-4 flex flex-col items-center">
             <button
               onClick={hangon}
-              className="bg-orange-400 hover:bg-orange-500 font-semibold text-white py-2 px-4 rounded-sm"
+              className="bg-orange-400 hover:bg-orange-500 text-white py-2 px-4 rounded-sm"
             >
               Create A Space
             </button>

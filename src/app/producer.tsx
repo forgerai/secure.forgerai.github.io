@@ -5,6 +5,10 @@ import Link from "next/link";
 import React from "react";
 import { Footer } from "./footer";
 
+import producer1 from "./producer-1.webp";
+import producer2 from "./producer-2.webp";
+import producer3 from "./producer-3.webp";
+
 const Hero = () => {
   return (
     <div className="flex flex-col justify-center items-center">
@@ -98,12 +102,11 @@ const HowItWorksLayout = ({
         <div className="flex flex-col justify-center items-center text-xl">
           {children}
           {callToAction && callToAction.action && (
-            <button
-              onClick={callToAction.action}
-              className="relative transform duration-200 hover:px-16 py-2 px-8 rounded-sm"
-            >
-              <div className="absolute inset-0 rounded-sm bg-gradient-to-r from-indigo-500 to-purple-500" />
-              <div className="relative text-white">{callToAction.text}</div>
+            <button onClick={callToAction.action} className="relative p-[3px]">
+              <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500" />
+              <div className="bg-black group relative transform rounded-[6px] px-8 py-2 text-lg text-white duration-200 hover:bg-transparent hover:px-12">
+                {callToAction.text}
+              </div>
             </button>
           )}
           {callToAction && callToAction.href && callToAction.newTab && (
@@ -111,19 +114,20 @@ const HowItWorksLayout = ({
               href={callToAction.href}
               target="_blank"
               referrerPolicy="no-referrer"
-              className="relative transform duration-200 hover:px-16 py-2 px-8 rounded-sm"
+              className="relative p-[3px]"
             >
-              <div className="absolute inset-0 rounded-sm bg-gradient-to-r from-indigo-500 to-purple-500" />
-              <div className="relative text-white">{callToAction.text}</div>
+              <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500" />
+              <div className="bg-black group relative transform rounded-[6px] px-8 py-2 text-lg text-white duration-200 hover:bg-transparent hover:px-12">
+                {callToAction.text}
+              </div>
             </a>
           )}
           {callToAction && callToAction.href && !callToAction.newTab && (
-            <Link
-              href={callToAction.href}
-              className="relative transform duration-200 hover:px-16 py-2 px-8 rounded-sm"
-            >
-              <div className="absolute inset-0 rounded-sm bg-gradient-to-r from-indigo-500 to-purple-500" />
-              <div className="relative text-white">{callToAction.text}</div>
+            <Link href={callToAction.href} className="relative p-[3px]">
+              <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500" />
+              <div className="bg-black group relative transform rounded-[6px] px-8 py-2 text-lg text-white duration-200 hover:bg-transparent hover:px-12">
+                {callToAction.text}
+              </div>
             </Link>
           )}
         </div>
@@ -138,19 +142,20 @@ const HowItWorksA = () => (
   <HowItWorksLayout
     id="learn"
     light
-    imageAlt="A person pulling their hair out having to go through a ton of emails"
     title="Reduce Complexity with Automated Reporting"
-    subtitle="By Centralizing Reports and Data Across All Partners"
+    subtitle="Eliminate Manual Effort, Scale Your Operations"
     callToAction={{
       text: "Simplify Your Reporting",
       href: "https://outlook.office365.com/owa/calendar/QuickIntro@forger.ai/bookings/",
       newTab: true,
     }}
+    image={producer1}
+    imageAlt="A flow diagram showing multiple data sources producing reports"
   >
     <div className="flex flex-col py-8 max-w-xl">
       <h3 className="">
         Say goodbye to the time and expense of building custom reports manually.
-        Forger integrates directly with your databases and datalakes,
+        Forger integrates directly with your databases and other data sources,
         automatically generating professional-grade reports. Focus on growing
         your business while we take care of the reporting pipeline, saving you
         time and resources.
@@ -170,6 +175,8 @@ const HowItWorksB = () => (
       href: "https://outlook.office365.com/owa/calendar/QuickIntro@forger.ai/bookings/",
       newTab: true,
     }}
+    image={producer2}
+    imageAlt="A flow diagram showing customer requests and how they are fulfilled"
   >
     <div className="flex flex-col py-8 max-w-xl">
       <h3 className="">
@@ -193,6 +200,8 @@ const HowItWorksC = () => (
       href: "https://outlook.office365.com/owa/calendar/QuickIntro@forger.ai/bookings/",
       newTab: true,
     }}
+    image={producer3}
+    imageAlt="A person happy seeing surprising insights"
   >
     <div className="flex flex-col py-8 max-w-xl">
       <h3 className="">
@@ -221,7 +230,7 @@ const ConsumerAction = ({
     </p>
     <button
       onClick={() => setUserKind("consumer")}
-      className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white py-3 px-8 rounded-sm transform duration-200 hover:px-12"
+      className="text-lg bg-gradient-to-r from-indigo-500 to-purple-500 text-white py-3 px-8 rounded-sm transform duration-200 hover:px-12"
     >
       Centralize Your Reports
     </button>
@@ -243,7 +252,7 @@ const Pricing = () => (
       href="https://outlook.office365.com/owa/calendar/QuickIntro@forger.ai/bookings/"
       target="_blank"
       referrerPolicy="no-referrer"
-      className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white py-3 px-8 rounded-sm transform duration-200 hover:px-12"
+      className="text-lg bg-gradient-to-r from-indigo-500 to-purple-500 text-white py-3 px-8 rounded-sm transform duration-200 hover:px-12"
     >
       Let's Discuss Your Needs
     </a>
