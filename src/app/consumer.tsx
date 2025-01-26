@@ -18,21 +18,15 @@ const Hero = () => {
       id="hero-consumer"
     >
       <div className="flex flex-col justify-center items-center gap-4 max-w-5xl p-8 sm:p-16 min-h-[75vh] ">
-        <Link
-          href="/#pricing-consumer"
-          className="text-xl text-center underline text-zinc-500 font-semibold max-w-2xl"
-        >
-          Pricing: Free
-        </Link>
         <h1 className="text-4xl sm:text-7xl font-semibold text-center">
           A Single Pane of Glass
           <br />
-          For All Your Partners
+          For Access Management
         </h1>
         <h2 className="text-lg text-center font-normal max-w-2xl">
-          Forger allows you to understand the value your partners bring you and
-          monitor the health of your partnerships, allowing you to keep your
-          partnerships healthy and strategic.
+          Streamline your security strategy with Forger — define, enforce, and
+          optimize access policies effortlessly across all your systems from one
+          place.
         </h2>
         <div className="flex flex-col md:flex-row gap-2 md:gap-4 py-8 justify-center items-center">
           <button
@@ -144,28 +138,26 @@ const HowItWorksLayout = ({
 
 const HowItWorksA = () => (
   <HowItWorksLayout
-    id="learn-consumer"
+    id="learn"
     dark
     image={consumer1}
     imageAlt="A person frustrated having to go through a ton of emails"
-    title="Reduce Friction In Your Partnership Strategy"
-    subtitle="By Centralizing Reports and Data Across All Partners"
+    title="Unified Control"
+    subtitle="by Centralizing Policy Management"
     callToAction={{
-      text: "Start Centralizing Today",
+      text: "Centralize Your Policies",
       newTab: true,
       href: "https://outlook.office365.com/owa/calendar/QuickIntro@forger.ai/bookings/",
     }}
   >
     <div className="flex flex-col py-8 max-w-xl">
       <h3 className="">
-        Stop wasting time chasing reports or navigating multiple dashboards.
-        Forger unifies all your partner data in one place, giving you the
-        clarity you need to focus on what matters most—building meaningful
-        partnerships.
+        Define all access policies in one place, and let Forger automatically
+        provision them across your entire tech stack.
       </h3>
       <h3 className=" pt-4">
-        You forward your reports to us, we give you one place where you can see
-        all your partnerships, and their histories, in one go.
+        Say goodbye to juggling policies on multiple platforms and maintaining
+        them manually.
       </h3>
       <h3 className=" pt-4">Easy As {pie}.</h3>
     </div>
@@ -175,26 +167,22 @@ const HowItWorksA = () => (
 const HowItWorksB = () => (
   <HowItWorksLayout
     reversed
-    title="Don’t Settle For Generic Data"
-    subtitle="Ask For KPIs and Metrics That You Care About"
+    title="Seamless Policy Enforcement"
+    subtitle="by Service Aware Policy Integrations"
     image={consumer2}
     imageAlt="A successful business partnership"
     callToAction={{
-      text: "Customize Your Insights",
+      text: "Secure Your Systems",
       newTab: true,
       href: "https://outlook.office365.com/owa/calendar/QuickIntro@forger.ai/bookings/",
     }}
   >
     <div className="flex flex-col py-8 max-w-xl">
       <h3 className="">
-        Forger lets you define and request the metrics that matter most to your
-        business, so you can measure partner performance in ways that align with
-        your goals.{" "}
+        Forger pushes policies to your systems natively, ensuring no workflow
+        changes nor policy circumventions.
       </h3>
-      <h3 className=" pt-4">
-        Gain deeper insights with relevant KPIs, and use it to understand your
-        partnerships better.
-      </h3>
+      <h3 className=" pt-4">Your tools, your way—secured.</h3>
     </div>
   </HowItWorksLayout>
 );
@@ -204,10 +192,10 @@ const HowItWorksC = () => (
     image={consumer3}
     imageAlt="A robot alerting a person of some issue"
     dark
-    title="Stay Ahead of Your Partnerships"
-    subtitle="By Automated Monitoring and Alerting on Reports"
+    title="Proactive Privilege Optimization"
+    subtitle="By Automated Monitoring of Privilege Usage"
     callToAction={{
-      text: "Boost Your Confidence",
+      text: "Optimize Your Privileges",
       newTab: true,
       href: "https://outlook.office365.com/owa/calendar/QuickIntro@forger.ai/bookings/",
     }}
@@ -215,84 +203,48 @@ const HowItWorksC = () => (
     <div className="flex flex-col py-8 max-w-xl">
       <h3 className="">
         Never be caught off guard again. Forger continuously monitors your
-        reports and alerts you to potential issues, giving you peace of mind
-        that your partnerships are always on track.{" "}
+        privilege usage and alerts you to potential issues.
       </h3>
       <h3 className=" pt-4">
-        This is completely automated. You don't have to set anything up.
+        Identify and resolve over-privileged access completely automatically.
       </h3>
     </div>
   </HowItWorksLayout>
 );
 
-const Pricing = ({ setUserKind }: { setUserKind: (s: string) => unknown }) => {
-  return (
-    <div
-      className="flex flex-col justify-start gap-4 p-8 sm:p-8"
-      id="pricing-consumer"
+const Pricing = () => (
+  <div
+    className="flex flex-col justify-center items-center gap-8 py-16 px-8 "
+    id="pricing"
+  >
+    <h2 className="text-4xl font-semibold text-center max-w-3xl">
+      Early Access Pricing
+    </h2>
+    <p className="text-xl text-center max-w-2xl ">
+      As we're in the early stages of our journey, we work closely with each
+      customer to understand their unique needs and provide tailored solutions.
+      As an early adopter, you'll receive preferential pricing that reflects
+      your valuable role in shaping our product.
+    </p>
+    <a
+      href="https://outlook.office365.com/owa/calendar/QuickIntro@forger.ai/bookings/"
+      target="_blank"
+      referrerPolicy="no-referrer"
+      className="text-lg bg-gradient-to-r from-orange-400 to-orange-500 text-white py-3 px-8 rounded-sm transform duration-200 hover:px-12"
     >
-      <h1 className="text-4xl font-semibold text-center">It's Free? How?</h1>
-      <div className="flex flex-col sm:flex-row justify-between pt-8 gap-24 sm:gap-8">
-        <div className="flex flex-col items-center sm:flex-1">
-          <h2 className="text-xl font-semibold text-center">
-            Forger is Free For You
-          </h2>
-          <h2 className="text-lg text-center font-normal max-w-2xl pt-4">
-            We believe the power Forger brings for you is great, but we also
-            know that it isn't life changing (yet). So we give it to you for
-            free, since our mission is to rethink reporting in todays world,
-            whether or not we profit from it. <br /> <br />
-            If you want to tip us, we won't say no 😃️
-          </h2>
-          <div className="pt-4 flex flex-col items-center">
-            <button
-              onClick={hangon}
-              className="bg-orange-400 hover:bg-orange-500 text-white py-2 px-4 rounded-sm"
-            >
-              Create A Space
-            </button>
-          </div>
-        </div>
-        <div className="flex flex-col items-center sm:flex-1">
-          <h2 className="text-xl font-semibold text-center capitalize">
-            We work with your partners to automate the entire reporting stack
-          </h2>
-          <h2 className="text-lg text-center font-normal max-w-2xl pt-4">
-            This is the real magic of our product. <br />
-            We work with your partners to directly integrate with your datasets
-            to create and manage reports automatically. This simplifies
-            operations while allowing for unparalleled customization in
-            reporting. We all know making the reports is much more complex than
-            reading them!
-          </h2>
-          <div className="pt-4 flex flex-col items-center">
-            <button
-              onClick={() => setUserKind("producer")}
-              className="bg-transparent hover:bg-orange-400 text-orange-700 hover:text-white py-2 px-4 border border-orange-700 hover:border-transparent rounded-sm"
-            >
-              How Can I Simplify My Reporting
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+      Let's Discuss Your Needs
+    </a>
+  </div>
+);
 
-export const UserKindConsumer = ({
-  setUserKind,
-  show,
-}: {
-  setUserKind: (s: string) => unknown;
-  show: boolean;
-}) => {
+export const UserKindConsumer = () => {
   return (
-    <div className={`${show ? "flex" : "hidden"} flex-col gap-8 flex-1`}>
+    <div className={`flex flex-col gap-8 flex-1`}>
       <Hero />
       <HowItWorksA />
       <HowItWorksB />
       <HowItWorksC />
-      <Pricing setUserKind={setUserKind} />
+      <Pricing />
       <Footer />
     </div>
   );
