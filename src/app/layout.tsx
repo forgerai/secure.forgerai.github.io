@@ -13,22 +13,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Forger",
+  title: "Forger: Centralized Access Management for Seamless Security",
   description:
-    "Reimagining Reporing - Read Reports Easier For Free or Create Reports Automatically and Drastically Simplify Your Reporting Flow",
+    "Reimagining Access Management - Streamline your security strategy with Forger. Define and enforce access policies in one place, seamlessly integrate with tools like AWS CLI, and automate privilege audits to minimize risks. Secure your resources with ease.",
   keywords: [
-    "AI",
-    "Report Generation",
-    "Automate Reporting",
-    "Create Dashboards",
-    "Automatic Dashboard",
-    "Reporting",
-    "Read Reports",
+    "access management platform",
+    "centralized access control",
+    "automated privilege management",
+    "seamless policy enforcement",
+    "security for AI agents",
+    "AWS policy integration",
+    "cloud access management",
+    "automated security audits",
+    "access control tool",
+    "resource access policies",
   ],
   openGraph: {
     title: "Forger",
     description:
-      "Reimagining Reporing - Read Reports Easier For Free or Create Reports Automatically and Drastically Simplify Your Reporting Flow",
+      "Reimagining Access Management - Streamline your security strategy with Forger. Define and enforce access policies in one place, seamlessly integrate with tools like AWS CLI, and automate privilege audits to minimize risks. Secure your resources with ease.",
     url: "https://forger.ai",
     siteName: "Forger",
     type: "website",
