@@ -339,7 +339,7 @@ const Hero = ()=>{
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: hangon,
-                            className: "bg-orange-400 border-orange-400 hover:bg-orange-500 text-white py-2 px-8 rounded-sm transform duration-200 hover:px-16",
+                            className: "bg-gradient-to-r from-orange-400 to-orange-500 text-white py-2 px-8 rounded-sm transform duration-200 hover:px-16",
                             children: "Create A Space"
                         }, void 0, false, {
                             fileName: "[project]/src/app/consumer.tsx",

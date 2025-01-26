@@ -31,7 +31,7 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row gap-2 md:gap-4 py-8 justify-center items-center">
           <button
             onClick={hangon}
-            className="bg-orange-400 border-orange-400 hover:bg-orange-500 text-white py-2 px-8 rounded-sm transform duration-200 hover:px-16"
+            className="bg-gradient-to-r from-orange-400 to-orange-500 text-white py-2 px-8 rounded-sm transform duration-200 hover:px-16"
           >
             Create A Space
           </button>
