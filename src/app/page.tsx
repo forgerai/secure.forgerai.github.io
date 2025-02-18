@@ -36,6 +36,12 @@ const NavBar = () => {
         >
           Details
         </Link>
+        <Link
+          href="https://app.forger.ai"
+          className="bg-transparent relative transform duration-200 hover:bg-orange-400 text-orange-700 hover:text-white hover:px-12 py-2 px-4 border border-orange-700 hover:border-transparent rounded-sm"
+        >
+          Try It Out
+        </Link>
         <a
           href="https://outlook.office365.com/owa/calendar/QuickIntro@forger.ai/bookings/"
           target="_blank"

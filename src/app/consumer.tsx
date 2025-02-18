@@ -29,12 +29,12 @@ const Hero = () => {
           place.
         </h2>
         <div className="flex flex-col md:flex-row gap-2 md:gap-4 py-8 justify-center items-center">
-          <button
-            onClick={hangon}
+          <Link
+            href="https://app.forger.ai"
             className="bg-gradient-to-r from-orange-400 to-orange-500 text-white py-2 px-8 rounded-sm transform duration-200 hover:px-16"
           >
             Try It Out
-          </button>
+          </Link>
           <a
             href="https://outlook.office365.com/owa/calendar/QuickIntro@forger.ai/bookings/"
             target="_blank"
